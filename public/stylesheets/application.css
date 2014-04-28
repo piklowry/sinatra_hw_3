@@ -1,13 +1,268 @@
-/*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
- * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the top of the
- * compiled file, but it's generally better to create a new file per style scope.
- *
- *= require_self
- *= require_tree .
- */
+footer {
+    clear:both;
+    overflow:hidden;
+    font-size:16px;
+    line-height:1.3;
+}
+#footer-boxes {
+    -moz-column-count:2;
+    -moz-column-gap:10px;
+    -webkit-column-count:2;
+    -webkit-column-gap:10px;
+    column-count:4;
+    column-gap:10px;
+}
+.footer-box {
+    margin:0 0 10px 0;
+    display:inline-block;
+    width:262px;
+    height:140px;
+    padding:15px;
+    background:#e6e2df;
+    color:#b2aaa4;
+    -webkit-transition:all 0.2s ease;
+    -moz-transition:all 0.2s ease;
+    background-position:320px 50%;
+    background-repeat:no-repeat;
+    text-decoration: none;
+}
+.footer-box h5 {
+    font: bold 24px Sans-Serif !important;
+    text-transform:uppercase;
+    font-size:38px;
+    line-height:1;
+    padding:0 0 10px 0;
+}
+.footer-box:hover h5 {
+    text-shadow:0 0 4px rgba(0,0,0,0.4);
+    color:white;
+}
+.footer-box:hover p {
+    color:white;
+}
+.footer-box p {
+    font-size:12px;
+    width:175px;
+    line-height:1.5;
+}
+.footer-box:hover {
+    background-position:200px 50%;
+}
+#f-diw {
+    background-image:url(http://cdn.css-tricks.com/wp-content/themes/CSS-Tricks-8/images/css-tricks.png);
+    background-position:290px -1288px;
+}
+#f-diw:hover {
+    background-color:#237abe;
+    background-position:186px -1288px;
+}
+#f-qod {
+    background-image:url(http://cdn.css-tricks.com/wp-content/themes/CSS-Tricks-8/images/css-tricks.png);
+    background-position:290px -1448px;
+}
+#f-qod:hover {
+    background-color:#37597a;
+    background-position:186px -1448px;
+}
+#f-htmlipsum {
+    background-image:url(http://cdn.css-tricks.com/wp-content/themes/CSS-Tricks-8/images/css-tricks.png);
+    background-position:290px -1608px;
+}
+#f-htmlipsum:hover {
+    background-color:#333333;
+    background-position:186px -1608px;
+}
+#f-qod:hover p {
+    color:#adbde3;
+}
+#f-bookshelf {
+    background-image:url(http://cdn.css-tricks.com/wp-content/themes/CSS-Tricks-8/images/css-tricks.png);
+    background-position:290px -1768px;
+}
+#f-bookshelf:hover {
+    background-color:#ff8400;
+    background-position:186px -1768px;
+}
+#f-html-ipsum:hover p {
+    color:#fff8da;
+}
+#f-twitter {
+    background-image:url(http://css-tricks.com/images/css-tricks.png);
+    background-position:290px -1928px;
+}
+#f-twitter:hover {
+    background-color:#4ed2fe;
+    background-position:186px -1928px;
+}
+#f-forrst {
+    background-image:url(http://css-tricks.com/images/css-tricks.png);
+    background-position:290px -2088px;
+}
+#f-forrst:hover {
+    background-color:#203f16;
+    background-position:186px -2088px;
+}
+#f-forrst:hover p {
+    color: #92c59c;
+}
+
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    body {
+        overflow-x: hidden;
+    }
+    .bsa_it_ad {
+        padding: 8px 4px 8px 12px !important;
+        position: relative;
+        border: 0 !important;
+        background: #D6D5D5 !important;
+        border-top: 0 !important;
+        box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+        font: 11px "Lucida Grande", Sans-Serif !important;
+    }
+    .bsa_it_ad:before, .bsa_it_ad:after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 6px;
+        width: 100%;
+        height: 100%;
+        background: #989898;
+        border-bottom: 6px solid #989898;
+        z-index: -1;
+        box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+    }
+    .bsa_it_ad:before {
+        top: 0;
+        left: 12px;
+        z-index: -2;
+        background: #6C6666;
+        border-bottom: 12px solid #6C6666;
+    }
+
+    .bsa_it_ad a {
+      margin: 0 !important;
+        padding: 0 !important;
+    }
+    .bsa_it_ad a img {
+      border: 0 !important;
+        position: static !important;
+    }
+    .bsa_it_ad a:hover img {
+        margin: 0 !important;
+    }
+    .bsa_it_ad a:hover {
+      background: none !important;
+    }
+    .bsa_it_i {
+        margin: 0 15px 0 0 !important;
+    }
+    .bsa_it_t {
+        font-size: 14px !important;
+        margin: 12px 0 0 0 !important;
+    }
+    .bsa_it_d {
+        padding-right: 10px;
+    }
+    .bsa_it_p{
+        display: none !important;
+    }
+    #demo-bar-ad {
+        width: 416px;
+        position: absolute;
+        right: 0;
+        top: -20px;
+        font: 11px "Lucida Grande", Sans-Serif !important;
+    }
+    #bsap_aplink {
+        position: absolute;
+        color: #999;
+        text-decoration: none;
+        bottom: 8px !important;
+        right: 8px !important;
+        padding: 0 !important;
+    }
+    .bsa_it_p a:hover {
+        background:none !important;
+    }
+    #demo-top-bar {
+        text-align: left;
+        background: #e18728;
+        position: relative;
+        zoom: 1;
+        width: 100% !important;
+        z-index: 6000;
+        box-shadow: 0 0 10px black;
+        padding: 20px 0 15px;
+    }
+    #demo-bar-inside {
+        width: 960px;
+        margin: 0 auto;
+        position: relative;
+    }
+    #demo-top-bar:before, #demo-top-bar:after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 6px;
+        width: 100%;
+        height: 100%;
+        background: #e18728;
+        border-bottom: 6px solid #8F5314;
+        z-index: -1;
+        box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+    }
+    #demo-top-bar:before {
+        top: 0;
+        left: 12px;
+        background: #6C6666;
+        border-bottom: 12px solid #62390E;
+    }
+
+    #demo-bar-buttons {
+        display: inline-block;
+        width: 236px;
+        text-align: center;
+        vertical-align: top;
+        font-size: 0;
+    }
+    #demo-bar-buttons a {
+        font-size: 12px;
+        color: white;
+        display: block;
+        margin: 2px 0;
+        text-decoration: none;
+        font: 14px "Lucida Grande", Sans-Serif !important;
+    }
+    #demo-bar-buttons a:hover,
+    #demo-bar-buttons a:focus {
+        color: #333;
+    }
+
+    #demo-bar-badge {
+        display: inline-block;
+        width: 302px;
+        padding: 0 !important;
+        margin: 0 !important;
+        background-color: transparent !important;
+    }
+    #demo-bar-badge a {
+        display: block;
+        width: 100%;
+        height: 38px;
+        border-radius: 0;
+        bottom: auto;
+        margin: 0;
+        background: url(/images/examples-logo.png) no-repeat;
+        background-size: 100%;
+        overflow: hidden;
+        text-indent: -9999px;
+    }
+    #demo-bar-badge:before, #demo-bar-badge:after {
+        display: none !important;
+    }
+
+
+}

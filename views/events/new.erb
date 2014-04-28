@@ -1,11 +1,6 @@
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
+
 <button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal" style="margin-left:420px; margin-top:100px;">
-  Add School
+  Add Event
 </button>
 <!-- Modal -->
 <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
@@ -13,15 +8,15 @@
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-        <h4 class="modal-title" id="myModalLabel">Add New School</h4>
+        <h4 class="modal-title" id="myModalLabel">Create  a New Event</h4>
       </div>
       <div class="modal-body">
 
 
-        <form action="/schools/new" method="post" align="center" >
-		.....Name: <input type="text" id="schools_name" name="school[name]"><br>
-		.Location: <input type="text" id="schools_location" name="school[location]"><br>
-		.......Age: <input type="text" id="schools_age" name="school[age]"><br>
+        <form action="/events/new" method="post" align="center" >
+		Event Name: <input type="text" id="events_name" name="event[name]"><br>
+		....Location: <input type="text" id="events_location" name="event[location]"><br>
+		...........Age: <input type="text" id="events_age" name="event[age]"><br>
 		<br>
 		<input type="submit" value="Submit">
 	</form>
@@ -34,7 +29,5 @@
     </div>
   </div>
 </div>
-
-
 
 

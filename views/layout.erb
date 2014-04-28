@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<title>School Event Lister</title>
+	<link rel="stylesheet" type="text/css" href="/stylesheets/application.css">
+	<link rel="stylesheet" type="text/css" href="/stylesheets/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="/stylesheets/style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <script language="javascript" type="text/javascript" src="/js/jquery.min.js"></script>
+  <script language="javascript" type="text/javascript" src="/js/bootstrap.min.js"></script>
+  <script language="javascript" type="text/javascript" src="/js/modal.js"></script>
+
+</head>
+
+
+
+<body>
+
+<div class="wrap">
+	<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+	 <div class="navbar-header">
+		<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+		<span class="sr-only">Toggle navigation</span>
+		<span class="icon-bar"></span>
+		<span class="icon-bar"></span>
+		<span class="icon-bar"></span>
+		</button>
+		<a class="navbar-brand" rel="home" href="/schools"><i class="glyphicon glyphicon-home"></i>Home</a>
+	 </div>
+	
+	
+       
+		<!-- /.container -->
+        <ul class="nav navbar-nav navbar-right">
+        
+          <li class="dropdown">
+            <a class="dropdown-toggle" role="button" data-toggle="dropdown" href="#"><i class="glyphicon glyphicon-book"></i>Schools<span class="caret"></span></a>
+            <ul id="g-account-menu" class="dropdown-menu" role="menu">
+              <li><a href="/schools">All Schools</a></li>
+              <li><a href="/schools/new">Add School</a></li>
+              
+            </ul>
+            <li class="dropdown">
+            <a class="dropdown-toggle" role="button" data-toggle="dropdown" href="#"><i class="glyphicon glyphicon-glass"></i>Events<span class="caret"></span></a>
+            <ul id="g-account-menu" class="dropdown-menu" role="menu">
+              <li><a href="/events">All Events</a></li>
+              <li><a href="/events/new">Add Event</a></li>
+            
+            </ul>
+
+          </li>
+          
+        </ul>
+				
+	 </div>	
+
+
+
+
+
+<%= yield %>
+
+</div>
+</body>
+</html>

@@ -2,14 +2,14 @@
 <br>
 <br>
 <div id="">
-        <form action="/schools/results" method="post" >
+        <form action="/events/results" method="post" >
         <input type="hidden" name="_method" />
     <input type="text" id="name" name="search[name]" size="21" maxlength="120"><input type="submit" value="search" class="tfbutton">
         </form>
     <div class=""></div>
     </div>
 <div class="main" align="center">
-<h1 class ="Heading"> Schools </h1> 
+<h1 class ="Heading"> Events </h1> 
 <h3 class ="Heading"> Click to Edit! </h3>
 
 
@@ -18,10 +18,12 @@
   
 
 
+    
+
 <div class="three-col">
 
-<% @schools.each do |m| %>
-      <a href="/schools/<%= m.id %>/edit" id="f-htmlipsum" class="footer-box">	
+<% @events.each do |m| %>
+      <a href="/events/<%= m.id %>/edit" id="f-bookshelf" class="footer-box">      
       <h5><%= m.name %></h5>
       <p><%= m.location %></p>
       <p><%= m.age %></p>
@@ -32,30 +34,6 @@
 
       </div>
       </div>
-	 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 <style>
@@ -140,7 +118,7 @@ footer {
     background-position:290px -1608px;
 }
 #f-htmlipsum:hover {
-    background-color:#203f16;
+    background-color:#333333;
     background-position:186px -1608px;
 }
 #f-qod:hover p {
@@ -157,28 +135,6 @@ footer {
 #f-html-ipsum:hover p {
     color:#fff8da;
 }
-#f-twitter {
-    background-image:url(http://css-tricks.com/images/css-tricks.png);
-    background-position:290px -1928px;
-}
-#f-twitter:hover {
-    background-color:#4ed2fe;
-    background-position:186px -1928px;
-}
-#f-forrst {
-    background-image:url(http://css-tricks.com/images/css-tricks.png);
-    background-position:290px -2088px;
-}
-#f-forrst:hover {
-    background-color:#203f16;
-    background-position:186px -2088px;
-}
-#f-forrst:hover p {
-    color: #92c59c;
-}
+
 </style>
-
-
-
-
 

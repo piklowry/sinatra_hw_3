@@ -1,0 +1,18 @@
+<h3 class"h3" align="center"> Edit your Event! </h3>
+		<form action="/events/<%= @event.id %>" method="post" align="center" />
+
+			<input type="hidden" name="_method" value="put">
+			  <h2>Edit Name of School</h2>
+			<input type="text" id="schools" name="event[name]" value="<%= @event.name %>">
+			  <h2>Edit the location</h2>
+			<input type="text" id="schools" name="event[location]" value="<%= @event.location %>">
+			  <h2>Edit your age </h2>
+			<input type="text" id="sevents" name="event[age]" value="<%= @event.age %>">
+			<input type="submit" value="Submit">
+
+		</form>
+
+		<form action="/events/<%= @event.id %>" method="post" align="center">
+			<input type="hidden" name="_method" value="delete">
+			<input type="submit" value="Delete">
+		</form>
